@@ -4,8 +4,9 @@
 
 This project focuses on classifying lung diseases from medical images using deep learning with PyTorch.  
 
-The goal is to build an end-to-end image classification pipeline that can assist in early diagnosis by automatically analyzing chest X-ray / CT scan images.
+The goal is to build an end-to-end image classification pipeline that can assist in early diagnosis by automatically analyzing chest X-ray images.
 
+This repository uses an EfficientNet-B0 model to classify X-rays into four categories: COVID19, Normal, Pneumonia, and Tuberculosis.
 
 
 ---
@@ -26,9 +27,9 @@ This project aims to develop a \*\*deep learning-based image classification syst
 
 \## Dataset
 
-\- Medical imaging dataset (Chest X-ray / CT scans)
+\- Medical imaging dataset (Chest X-ray)
 
-\- Classes: \*Normal\* and \*Disease\* (or multiple disease classes)
+\- Classes: 'COVID19', 'NORMAL', 'PNEUMONIA', 'TURBERCULOSIS'
 
 \- Images resized and normalized before training
 
@@ -56,45 +57,8 @@ This project aims to develop a \*\*deep learning-based image classification syst
 
 
 
-\## Model Architecture
-
-\- Convolutional Neural Network (CNN)
-
-\- ReLU activations
-
-\- MaxPooling layers
-
-\- Fully connected classification head
-
-\- Cross-Entropy Loss
 
 
-
-\*(Transfer learning can be added using ResNet/EfficientNet)\*
-
-
-
----
-
-
-
-\## Training Details
-
-\- Framework: \*\*PyTorch\*\*
-
-\- Optimizer: Adam
-
-\- Loss Function: CrossEntropyLoss
-
-\- Batch Size: 32
-
-\- Epochs: 20 (configurable)
-
-\- Learning Rate: 0.001
-
-
-
----
 
 
 
@@ -104,14 +68,12 @@ This project aims to develop a \*\*deep learning-based image classification syst
 
 \- Confusion matrix for performance analysis
 
-\- Model generalizes well on unseen test data
 
 
 
 ---
 
 
-This repository uses an EfficientNet-B0 model to classify X-rays into four categories: COVID19, Normal, Pneumonia, and Tuberculosis.
 
 ## How to run
 1. Clone the repo.
